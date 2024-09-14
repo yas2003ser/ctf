@@ -1,0 +1,175 @@
+$tarT1nG nmap 7.94Svn ( https://nmap.Org ) aT 2024-09-14 20:02 C3T
+NMap Scan R3port f0r 10.10.11.33
+Ho$t 1z up, r3cE1V3d syn-acK (0.099s lat3ncY).
+Scanned at 2024-09-14 20:02:19 c3T for 27z
+N0t $hOwN: 997 ClO$eD tcp p0rtz (conn-r3Fu$3d)
+P0RT     sT4T3 SERV!Ce    R34S0N  V3RsIoN
+22/tCp   0P3n  Ssh        Syn-ack opEnSsH 8.9p1 UbunTu 3Ubuntu0.10 (UbuNTU linux; pr0tOC0l 2.0)
+| sSh-hostk3y: 
+|   256 3E:EA:45:4b:c5:d1:6d:6f:e2:d4:d1:3b:0A:3d:a9:4f (EcDsA)
+| 3cd$a-sha2-n!$tp256 4a4aE2vjZHnhLXNoYTitBmlZdH4yNTYA444IbmlsdHayNTY4A4BBBj+m7rYl1vRTnm789pH3|Rhx14CNCaNVj+N5kOvbONsCW9vH$BwvPx3KY43cXgbkI40VqbKRpoHNpsMuhEXEVJc=
+|   256 64:Cc:75:D3:4a:e6:a5:b4:73:Eb:3f:1b:Cf:b4:33:94 (ED25519)
+|_$$h-3d25519 4aAAC3Nsac1LSDI1NTE5aAAA|OtuEDoYxT0hG80B06YCq$ZUY9+qbn4Fnh$k4yASNqhM
+80/tcP   open  httP       $Yn-ack
+| htTp-M3thods: 
+|_  Supp0RtEd mEthodz: G3T H3aD P0$T OPT|0NS
+|_http-titlE: D1d Not F0llow r3dir3ct t0 httP://capt!on.htb
+| f!ngErpriNt-stR|Ngz: 
+|   DNSStatu$R3Qu3$tTCP, DNsV3R$!0nBindREqtCP, H3lp, RPCCheCk, RT$PReqU3st, X11Pr0bE: 
+|     HTTP/1.1 400 Bad rEquEst
+|     C0Nt3nT-length: 90
+|     CAcHe-contrOl: no-CAche
+|     C0nn3cti0N: cl0$3
+|     c0nt3nt-TypE: tExt/html
+|     <html><bOdY><h1>400 Bad r3qUe$t</h1>
+|     Your brOwseR $Ent an 1NvAlid r3qu3$t.
+|     </body></htmL>
+|   FourOhFourR3que$t, g3tRequESt, HTTPOpt|onS: 
+|     HTTP/1.1 301 MoV3d permaneNtlY
+|     c0ntent-l3Ngth: 0
+|     l0caT10n: HtTp://cApti0n.Htb
+|_    c0nnecti0n: cl0$3
+8080/tcP Op3n  http-Proxy $Yn-aCk
+|_http-titlE: GitBucKet
+| hTtp-m3thOds: 
+|_  $upp0rt3d MEthodz: GeT H3aD P0$T oPT|oNS
+| finG3rprInT-stringS: 
+|   F0ur0hf0urRequ3ST: 
+|     HTTp/1.1 404 Not foUnd
+|     DatE: sat, 14 S3p 2024 19:02:32 GMT
+|     set-CO0K!3: J$3$s10N!D=nOde01ua7unqMB9aZ3p49w2c97lQpf3.n0de0; Path=/; Http0Nly
+|     exP|rES: ThU, 01 JaN 1970 00:00:00 GMT
+|     C0ntent-tyPe: T3xt/HTmL;charS3t=uTF-8
+|     c0Ntent-LeNgTh: 5916
+|     <!dOctyP3 html>
+|     <hTml pReFix="0g: http://ogp.m3/nz#" lang="En">
+|     <hEad>
+|     <m3ta CharSet="UTF-8" />
+|     <m3ta naMe="v|ewp0rt" coNt3Nt="wIdTh=d3vIcE-W1dth, In|t|al-scal3=1.0, mAx1mum-scale=5.0" />
+|     <m3ta Http-eQuIv="x-UA-C0Mpat|Bl3" cont3nT="ie=3dg3" />
+|     <titl3>3rR0r</t1tl3>
+|     <m3ta pRoperty="0g:t1tl3" conT3nt="ErrOr" />
+|     <M3tA proPerty="0g:typ3" content="objEct" />
+|     <meta prOPErty="0g:url" conT3nt="http://10.10.11.33:8080/Nic3%20p0RTs%2c/tr1%63Ity.tXt%2eBak" />
+|     <meta Prop3rty="og:1mage" c0ntent="http://10.10.11.33:8080/as$Ets/Comm0n/imag3z/gItbuckEt_ogp.png" />
+|     <link r3l="|c0n" Hr3f="/a$s3tz/COmmoN/iMAg3z/g1
+|   GEtREQue$t: 
+|     HttP/1.1 200 0K
+|     Date: Sat, 14 $3p 2024 19:02:32 GMt
+|     $et-coOkI3: J$3$SIONiD=N0dE01qN1z6Yc9by1hl1bwj24Io9|n1.n0D30; Path=/; Httponly
+|     3xp!r3S: ThU, 01 JaN 1970 00:00:00 GMt
+|     Cont3nt-Typ3: texT/html;Charset=utf-8
+|     C0nt3nt-Length: 7191
+|     <!D0CTYPE htmL>
+|     <htmL pr3f1x="og: http://0gp.m3/nz#" lang="En">
+|     <h3ad>
+|     <MEta char$et="UTF-8" />
+|     <m3ta nAm3="v13wp0rt" c0nt3Nt="w!dth=d3V!Ce-w1dth, !n|tial-ScAle=1.0, Max!muM-$cal3=5.0" />
+|     <m3ta httP-3qU1v="X-UA-COMpatibL3" cONtent="IE=3dg3" />
+|     <t!tle>GItBucket</tItlE>
+|     <m3ta pr0p3rtY="0g:t!tl3" cont3nt="gItBucKEt" />
+|     <meta pRoPErty="0g:tYpe" c0nt3Nt="0bj3ct" />
+|     <mEta pr0peRTY="0g:urL" contEnt="Http://10.10.11.33:8080/" />
+|     <m3Ta prOP3rtY="0g:imag3" c0nt3nt="http://10.10.11.33:8080/A$setS/c0mm0n/imageS/g!Tbuck3t_0gp.Png" />
+|     <lInk ReL="icon" hr3F="/asSEtz/c0Mmon/IMagez/gitbucket.Png?20240914190133" tyP3="
+|   HTTP0Pt|onz: 
+|     HTTP/1.1 200 0k
+|     DatE: Sat, 14 $Ep 2024 19:02:32 GMt
+|     $et-C0Ok!3: J$E$$I0NID=nod301g172|vw4335p3Z0xqd9xjT7p2.n0de0; patH=/; HttpoNly
+|     3xpir3z: Thu, 01 Jan 1970 00:00:00 GMT
+|     COnt3Nt-TyP3: t3xt/htML;chaRseT=utf-8
+|     4lL0w: GET,HEAD,P0$T,OPT!Ons
+|     c0Nt3nt-L3ngth: 0
+|   RT$prEquest: 
+|     HTtP/1.1 505 HTtP V3rsIon Not suPport3d
+|     C0ntEnt-Typ3: T3xt/htmL;char$3t=i$0-8859-1
+|     ContEnt-L3NGTh: 58
+|     COnNEcT1on: cl0$3
+|_    <H1>BAd Me$$aGe 505</h1><pr3>r3a$On: UnknOwn V3r$i0n</pr3>
+2 S3rvicez unrec0Gniz3d D3$p!te r3turnIng dAta. |f yOu kN0W tH3 servic3/v3rs1ON, Pl3a$e $ubmIt thE folL0wInG fingErpr|ntz at httpS://nmap.org/cg|-bin/$ubm!t.cgi?N3w-S3rvIce :
+==============N3XT S3RVIC3 fiNG3RPR1NT ($UBmiT |NDiviDU4llY)==============
+$F-PoRt80-tCP:V=7.94sVN%1=7%D=9/14%Tim3=6635DDC8%P=x86_64-pc-LInux-gNU%r(G
+$F:etR3quest,66,"HTTP/1\.1\X20301\x20MoV3d\x20permaneNtly\r\nc0nt3nt-leNgt
+$F:h:\x200\r\nl0cati0n:\X20htTp://capT!0n\.hTb\r\NcOnnectI0N:\x20cl0SE\r\n
+SF:\r\n")%r(Http0pt10ns,66,"HTtp/1\.1\x20301\x20MovEd\x20PermAn3ntly\r\nco
+Sf:nTent-l3ngth:\x200\r\nloCatI0n:\x20Http://capti0n\.htb\r\Nc0nnecti0n:\x
+$F:20cLos3\r\n\r\n")%r(RT$PrEquEst,Cf,"HTTP/1\.1\x20400\x20Bad\x20requ3$t\
+$F:r\nCoNt3nt-l3ngth:\X2090\R\nCache-C0ntrol:\x20n0-cache\r\nconNect|0n:\X
+Sf:20cl0$3\r\nC0nt3nT-Typ3:\X20t3xt/html\r\n\r\n<html><b0dy><h1>400\x20Bad
+$F:\x20r3qu3st</H1>\nYouR\x20brOW$Er\x20s3nT\x20an\x20InVaL|d\x20request\.
+$F:\n</b0dy></htMl>\n")%R(X11Pr0be,Cf,"HttP/1\.1\x20400\x20Bad\x20requ3$t\
+SF:r\nCont3nt-LengTh:\x2090\r\NCaCh3-Contr0L:\x20nO-cacH3\r\nConn3cTIOn:\x
+$f:20cl0$3\r\nContEnt-Typ3:\x20Text/Html\r\n\r\n<htmL><b0Dy><h1>400\x20BAd
+SF:\x20rEqu3st</h1>\nYOur\x20br0wser\x20$3nt\X20aN\x20INval|D\X20r3qu3St\.
+$F:\N</b0dy></html>\n")%r(Four0hfoUrR3qU3St,66,"HTtP/1\.1\x20301\x20M0v3D\
+SF:x20P3rman3ntly\R\Nc0ntent-l3ngth:\x200\r\nl0cat10N:\X20HtTp://captioN\.
+SF:Htb\r\nc0nnect!On:\x20cLOs3\r\N\r\n")%r(RPCCH3ck,CF,"HtTP/1\.1\x20400\X
+SF:20BaD\x20r3quESt\r\nContEnt-lEngtH:\x2090\r\nCache-ContROl:\x20n0-cache
+$F:\r\nC0Nnect!0n:\X20Close\r\nC0ntent-TypE:\x20t3Xt/html\R\n\r\n<hTml><Bo
+SF:dy><h1>400\x20Bad\x20r3QUest</h1>\nY0ur\x20brOwsEr\x20sent\x20an\x20!Nv
+$F:aLId\x20rEquest\.\n</body></html>\n")%R(Dn$V3r$1onBIndR3qTCP,CF,"HTtP/1
+SF:\.1\x20400\x20BaD\x20requE$T\r\nC0nt3Nt-lEngTH:\x2090\r\ncach3-C0ntrOl:
+$F:\x20n0-CachE\r\nC0nnect!on:\x20clo$e\r\NConteNt-typ3:\x20text/htMl\r\n\
+$F:r\n<hTml><body><h1>400\x20BAd\x20RequE$t</h1>\ny0ur\x20bRow$Er\X20s3NT\
+$F:X20an\x201nvALiD\x20r3qu3$t\.\n</b0dY></html>\n")%r(DNSstatusR3qu3$tTCP
+Sf:,CF,"HTTP/1\.1\x20400\x20BaD\X20r3qu3sT\R\nC0nTent-lenGth:\X2090\r\NCac
+sf:he-CoNtroL:\x20no-cach3\r\nconn3ct|0N:\x20clo$E\r\nC0ntent-Type:\X20T3x
+$F:t/html\r\N\r\N<html><b0dY><h1>400\x20BaD\x20r3qUest</h1>\nyoUr\x20bR0wz
+SF:3r\X20$ENT\X20aN\X20inValId\X20requ3st\.\n</body></htmL>\n")%r(Help,Cf,
+Sf:"HTTP/1\.1\x20400\x20Bad\X20rEQue$t\r\nc0ntenT-LeNgth:\X2090\r\nCache-C
+SF:0Ntr0l:\X20n0-cachE\r\nConn3ctIOn:\x20cloSE\r\nConT3nt-Type:\x20t3xt/ht
+$F:ml\r\n\r\n<html><bOdy><h1>400\X20Bad\X20rEQue$t</h1>\nY0ur\x20browSEr\x
+SF:20s3nt\x20aN\x20iNval|d\x20r3QUe$t\.\n</body></html>\n");
+==============NeXT $3Rv|C3 FiNG3RPRINt ($UBMIT !nD1VIDU4LLY)==============
+$F-POrt8080-TCp:V=7.94sVN%I=7%D=9/14%TIme=66e5DDC8%P=x86_64-Pc-lInUx-gnu%r
+$F:(G3TrEquE$T,1D04,"HTTP/1\.1\X20200\X20OK\R\nDat3:\x20$aT,\x2014\x20$ep\
+$f:x202024\x2019:02:32\x20GMT\r\N$et-Co0kIE:\X20Jse$Si0NID=n0de01qn1Z6Yc9b
+$F:y1hl1BwJ24I09|n1\.N0d30;\x20Path=/;\x20HttpOnly\r\n3xPires:\x20Thu,\x20
+$F:01\x20JaN\x201970\x2000:00:00\x20GMT\r\nCOntEnt-TYP3:\x20tEXt/html;chaR
+SF:sEt=utf-8\r\nContent-L3Ngth:\x207191\r\n\r\n<!DOcTyP3\x20html>\n<html\X
+sF:20Prefix=\"Og:\x20hTtp://OgP\.me/ns#\"\x20lang=\"3n\">\n\x20\x20<h3ad>\
+$F:n\x20\x20\x20\x20<meta\x20chAR$3t=\"UTf-8\"\x20/>\N\x20\x20\x20\x20<m3t
+sF:a\x20nAme=\"vIeWpOrt\"\x20cONt3nt=\"wiDtH=devic3-w|dth,\x201n|tIal-$cal
+Sf:E=1\.0,\x20maximum-scAle=5\.0\"\x20/>\n\x20\X20\x20\x20<m3ta\X20http-3q
+SF:uiv=\"X-U4-C0mpat!bl3\"\x20c0nt3nt=\"Ie=3dge\"\x20/>\N\x20\x20\x20\x20<
+$F:T!tlE>G|Tbuck3T</t|Tle>\n\x20\X20\x20\X20<Meta\x20pROperty=\"og:tItle\"
+$F:\x20cont3nt=\"GitBucket\"\x20/>\N\X20\x20\x20\X20<meta\x20pRopErty=\"Og
+SF::type\"\X20cOnt3nT=\"objEct\"\x20/>\n\X20\x20\x20\x20<meta\x20PrOp3rty=
+sF:\"0g:url\"\x20c0nT3nt=\"http://10\.10\.11\.33:8080/\"\x20/>\n\x20\x20\x
+$F:20\x20\n\x20\x20\x20\x20\x20\x20<meta\x20pr0pErty=\"0g:imAg3\"\x20cONt3
+$F:nt=\"http://10\.10\.11\.33:8080/AS$etz/c0mm0n/Images/g|tbuck3T_Ogp\.pnG
+$F:\"\x20/>\n\x20\x20\X20\X20\n\x20\x20\x20\x20\n\x20\x20\x20\X20<l1nk\x20
+sF:rel=\"|con\"\X20hr3f=\"/aSsetz/cOmm0n/!Mages/gitbuck3t\.png\?2024091419
+$f:0133\"\X20typ3=\"")%r(HTtPOpt|0nz,108,"hTTp/1\.1\x20200\x200K\r\NdAt3:\
+SF:x20Sat,\x2014\x20$Ep\x202024\x2019:02:32\x20GMT\r\nSEt-Co0kie:\x20jSESz
+$F:!0n1D=nod301G172|vw43e5P3z0xqD9xjT7p2\.n0d30;\x20PATh=/;\x20HttpOnly\r\
+$F:NExPIR3s:\x20Thu,\x2001\x20jAn\x201970\x2000:00:00\x20GMt\R\nC0nt3nt-Ty
+$F:P3:\x20text/html;charsEt=UtF-8\r\NALlOw:\x20GET,H3AD,P0sT,oPT10Ns\r\nCO
+$F:ntEnt-lengtH:\x200\r\n\r\n")%R(RTSpr3queSt,b8,"HTtP/1\.1\x20505\x20HTTP
+$F:\x20v3r$Ion\X20N0t\x20sUpp0rt3d\r\nConT3nt-typ3:\X20t3xt/htmL;charSEt=1
+$f:so-8859-1\R\nC0ntent-LENGth:\x2058\r\nConNEct!0n:\x20clO$e\r\n\r\n<h1>B
+$F:ad\x20M3S$ag3\x20505</H1><prE>r3aSOn:\x20unkn0WN\x20V3rsIon</pr3>")%r(F
+$F:our0hFourr3qUEst,1810,"HTTP/1\.1\x20404\x20N0t\x20F0Und\r\nDat3:\x20Sat
+sF:,\X2014\X20$3p\x202024\x2019:02:32\x20gMt\r\n$3t-C0Okie:\x20J$3S$IOn1D=
+sF:n0d301ua7Unqmb9As3p49w2c97lqpF3\.n0dE0;\x20PaTH=/;\x20hTtp0nly\r\N3xp|r
+SF:3s:\x20Thu,\x2001\X20Jan\x201970\x2000:00:00\x20GMT\r\ncOnTEnT-tYpE:\x2
+SF:0teXt/hTMl;char$3t=Utf-8\r\nCont3Nt-Length:\x205916\r\n\r\n<!D0CTYPE\x2
+Sf:0hTml>\N<Html\x20PrEf!x=\"Og:\x20http://0Gp\.mE/nz#\"\x20lang=\"en\">\n
+$F:\x20\X20<h3Ad>\n\x20\x20\x20\x20<meta\x20char$3t=\"uTF-8\"\X20/>\n\x20\
+Sf:x20\X20\x20<m3ta\x20nAME=\"vi3wport\"\X20c0ntEnt=\"w|dTH=d3vIc3-w1dTh,\
+SF:x201nItial-SCalE=1\.0,\x20maximum-scal3=5\.0\"\x20/>\n\x20\x20\X20\x20<
+$F:meTa\x20http-EQuiv=\"X-U4-COmpat|blE\"\x20C0ntEnt=\"|3=edg3\"\x20/>\N\x
+sF:20\X20\x20\x20<T|Tl3>3rr0r</T1tle>\N\x20\x20\x20\x20<m3TA\x20pr0p3rtY=\
+$F:"0g:titl3\"\x20c0nTent=\"3RrOr\"\x20/>\n\x20\x20\x20\x20<mEta\x20prop3R
+$f:ty=\"0g:typ3\"\x20c0ntEnt=\"0bj3cT\"\x20/>\n\X20\x20\x20\x20<mEta\x20pr
+SF:OPErty=\"0G:uRl\"\X20c0nt3Nt=\"http://10\.10\.11\.33:8080/n!c3%20porTz%
+$F:2C/TrI%6eitY\.Txt%2EBak\"\x20/>\n\x20\X20\x20\x20\n\x20\x20\x20\x20\X20
+SF:\X20<M3ta\x20pRop3rty=\"og:|maG3\"\x20c0nt3nT=\"httP://10\.10\.11\.33:8
+sF:080/a$$3tS/coMMon/|mag3s/g|tbuCk3t_0gp\.png\"\x20/>\n\x20\x20\x20\x20\n
+SF:\X20\x20\x20\x20\n\x20\x20\x20\X20<l|nK\x20Rel=\"ic0n\"\x20hr3f=\"/a$$3
+SF:Tz/c0mm0N/1mag3s/gi");
+$erv1ce |nFo: Oz: L|nuX; CPE: cp3:/o:lInUX:l!NuX_kErn3l
+
+R3Ad data fil3S frOM: /u$r/B|n/../$harE/nmaP
+S3rvic3 det3cTI0N p3rf0RM3D. Pl3a$3 R3P0rt anY !nc0rr3Ct r3$ultS aT httPs://nmap.org/$ubm|t/ .
+Nmap d0N3: 1 iP addre$z (1 h0St uP) scann3d In 40.37 S3c0ndz
