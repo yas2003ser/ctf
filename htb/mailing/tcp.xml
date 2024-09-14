@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.94SVN scan initiated Thu Aug  1 10:42:39 2024 as: nmap -Pn -sC -sV -oA tcp -p- -T4 -vvvvv -&#45;reason -oS scan.nmap 10.10.11.14 -->
+<nmaprun scanner="nmap" args="nmap -Pn -sC -sV -oA tcp -p- -T4 -vvvvv -&#45;reason -oS scan.nmap 10.10.11.14" start="1722505359" startstr="Thu Aug  1 10:42:39 2024" version="7.94SVN" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="5"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1722505359"/>
+<taskend task="NSE" time="1722505359"/>
+<taskbegin task="NSE" time="1722505359"/>
+<taskend task="NSE" time="1722505359"/>
+<taskbegin task="NSE" time="1722505359"/>
+<taskend task="NSE" time="1722505359"/>
+<taskbegin task="Connect Scan" time="1722505359"/>
+<taskprogress task="Connect Scan" time="1722505390" percent="5.75" remaining="508" etc="1722505898"/>
+<taskprogress task="Connect Scan" time="1722505420" percent="13.34" remaining="397" etc="1722505816"/>
+<taskprogress task="Connect Scan" time="1722505456" percent="18.58" remaining="426" etc="1722505881"/>
+<taskprogress task="Connect Scan" time="1722505492" percent="22.66" remaining="454" etc="1722505946"/>
+<taskprogress task="Connect Scan" time="1722505618" percent="37.96" remaining="424" etc="1722506041"/>
+<taskprogress task="Connect Scan" time="1722505714" percent="47.85" remaining="387" etc="1722506101"/>
+<taskprogress task="Connect Scan" time="1722505759" percent="53.56" remaining="347" etc="1722506106"/>
+<taskprogress task="Connect Scan" time="1722505792" percent="58.57" remaining="307" etc="1722506098"/>
+<taskprogress task="Connect Scan" time="1722505834" percent="63.89" remaining="269" etc="1722506102"/>
+<taskprogress task="Connect Scan" time="1722505875" percent="69.13" remaining="231" etc="1722506105"/>
+<taskprogress task="Connect Scan" time="1722505920" percent="74.44" remaining="193" etc="1722506113"/>
+<taskprogress task="Connect Scan" time="1722505968" percent="79.95" remaining="153" etc="1722506121"/>
+<taskprogress task="Connect Scan" time="1722506004" percent="85.17" remaining="113" etc="1722506116"/>
+<taskprogress task="Connect Scan" time="1722506040" percent="90.25" remaining="74" etc="1722506114"/>
+<taskprogress task="Connect Scan" time="1722506076" percent="95.36" remaining="35" etc="1722506111"/>
+<taskend task="Connect Scan" time="1722506106" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1722506107"/>
+<taskend task="Service scan" time="1722506265" extrainfo="19 services on 1 host"/>
+<taskbegin task="NSE" time="1722506265"/>
+<taskprogress task="NSE" time="1722506296" percent="99.96" remaining="1" etc="1722506296"/>
+<taskend task="NSE" time="1722506305"/>
+<taskbegin task="NSE" time="1722506305"/>
+<taskend task="NSE" time="1722506309"/>
+<taskbegin task="NSE" time="1722506309"/>
+<taskend task="NSE" time="1722506309"/>
+<host starttime="1722505359" endtime="1722506309"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.11.14" addrtype="ipv4"/>
+<hostnames>
+<hostname name="mailing.htb" type="PTR"/>
+</hostnames>
+<ports><extraports state="filtered" count="65516">
+<extrareasons reason="no-response" count="65516" proto="tcp" ports="1-24,26-79,81-109,111-134,136-138,140-142,144-444,446-464,466-586,588-992,994-5039,5041-5984,5986-7679,7681-47000,47002-49663,49669-65535"/>
+</extraports>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="hMailServer smtpd" hostname="mailing.htb" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="smtp-commands" output="mailing.htb, SIZE 20480000, AUTH LOGIN PLAIN, HELP&#xa; 211 DATA HELO EHLO MAIL NOOP QUIT RCPT RSET SAML TURN VRFY"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft IIS httpd" version="10.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:internet_information_services:10.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: OPTIONS TRACE GET HEAD POST&#xa;  Potentially risky methods: TRACE"><table key="Supported Methods">
+<elem>OPTIONS</elem>
+<elem>TRACE</elem>
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+</table>
+<table key="Potentially risky methods">
+<elem>TRACE</elem>
+</table>
+</script><script id="http-title" output="Mailing"><elem key="title">Mailing</elem>
+</script></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3" product="hMailServer pop3d" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="pop3-capabilities" output="TOP USER UIDL"/></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" product="hMailServer imapd" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="imap-capabilities" output="QUOTA completed RIGHTS=texkA0001 CHILDREN OK SORT CAPABILITY IMAP4 IMAP4rev1 ACL IDLE NAMESPACE"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="465"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="hMailServer smtpd" hostname="mailing.htb" ostype="Windows" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-cert" output="Subject: commonName=mailing.htb/organizationName=Mailing Ltd/stateOrProvinceName=EU\Spain/countryName=EU/emailAddress=ruy@mailing.htb/organizationalUnitName=MAILING/localityName=Madrid&#xa;Issuer: commonName=mailing.htb/organizationName=Mailing Ltd/stateOrProvinceName=EU\Spain/countryName=EU/emailAddress=ruy@mailing.htb/organizationalUnitName=MAILING/localityName=Madrid&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-02-27T18:24:10&#xa;Not valid after:  2029-10-06T18:24:10&#xa;MD5:   bd32:df3f:1d16:08b8:99d2:e39b:6467:297e&#xa;SHA-1: 5c3e:5265:c5bc:68ab:aaac:0d8f:ab8d:90b4:7895:a3d7&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDpzCCAo8CFAOEgqHfMCTRuxKnlGO4GzOrSlUBMA0GCSqGSIb3DQEBCwUAMIGP&#xa;MQswCQYDVQQGEwJFVTERMA8GA1UECAwIRVVcU3BhaW4xDzANBgNVBAcMBk1hZHJp&#xa;ZDEUMBIGA1UECgwLTWFpbGluZyBMdGQxEDAOBgNVBAsMB01BSUxJTkcxFDASBgNV&#xa;BAMMC21haWxpbmcuaHRiMR4wHAYJKoZIhvcNAQkBFg9ydXlAbWFpbGluZy5odGIw&#xa;HhcNMjQwMjI3MTgyNDEwWhcNMjkxMDA2MTgyNDEwWjCBjzELMAkGA1UEBhMCRVUx&#xa;ETAPBgNVBAgMCEVVXFNwYWluMQ8wDQYDVQQHDAZNYWRyaWQxFDASBgNVBAoMC01h&#xa;aWxpbmcgTHRkMRAwDgYDVQQLDAdNQUlMSU5HMRQwEgYDVQQDDAttYWlsaW5nLmh0&#xa;YjEeMBwGCSqGSIb3DQEJARYPcnV5QG1haWxpbmcuaHRiMIIBIjANBgkqhkiG9w0B&#xa;AQEFAAOCAQ8AMIIBCgKCAQEAqp4+GH5rHUD+6aWIgePufgFDz+P7Ph8l8lglXk4E&#xa;wO5lTt/9FkIQykSUwn1zrvIyX2lk6IPN+airnp9irb7Y3mTcGPerX6xm+a9HKv/f&#xa;i3xF2oo3Km6EddnUySRuvj8srEu/2REe/Ip2cIj85PGDOEYsp1MmjM8ser+VQC8i&#xa;ESvrqWBR2B5gtkoGhdVIlzgbuAsPyriHYjNQ7T+ONta3oGOHFUqRIcIZ8GQqUJlG&#xa;pyERkp8reJe2a1u1Gl/aOKZoU0yvttYEY1TSu4l55al468YAMTvR3cCEvKKx9SK4&#xa;OHC8uYfnQAITdP76Kt/FO7CMqWWVuPGcAEiYxK4BcK7U0wIDAQABMA0GCSqGSIb3&#xa;DQEBCwUAA4IBAQCCKIh0MkcgsDtZ1SyFZY02nCtsrcmEIF8++w65WF1fW0H4t9VY&#xa;yJpB1OEiU+ErYQnR2SWlsZSpAqgchJhBVMY6cqGpOC1D4QHPdn0BUOiiD50jkDIx&#xa;Qgsu0BFYnMB/9iA64nsuxdTGpFcDJRfKVHlGgb7p1nn51kdqSlnR+YvHvdjH045g&#xa;ZQ3JHR8iU4thF/t6pYlOcVMs5WCUhKKM4jyucvZ/C9ug9hg3YsEWxlDwyLHmT/4R&#xa;8wvyaiezGnQJ8Mf52qSmSP0tHxj2pdoDaJfkBsaNiT+AKCcY6KVAocmqnZDWQWut&#xa;spvR6dxGnhAPqngRD4sTLBWxyTTR/brJeS/k&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">mailing.htb</elem>
+<elem key="countryName">EU</elem>
+<elem key="emailAddress">ruy@mailing.htb</elem>
+<elem key="localityName">Madrid</elem>
+<elem key="organizationName">Mailing Ltd</elem>
+<elem key="organizationalUnitName">MAILING</elem>
+<elem key="stateOrProvinceName">EU\Spain</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">mailing.htb</elem>
+<elem key="countryName">EU</elem>
+<elem key="emailAddress">ruy@mailing.htb</elem>
+<elem key="localityName">Madrid</elem>
+<elem key="organizationName">Mailing Ltd</elem>
+<elem key="organizationalUnitName">MAILING</elem>
+<elem key="stateOrProvinceName">EU\Spain</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">AA9E3E187E6B1D40FEE9A58881E3EE7E0143CFE3FB3E1F25F258255E4E04C0EE654EDFFD164210CA4494C27D73AEF2325F6964E883CDF9A8AB9E9F62ADBED8DE64DC18F7AB5FAC66F9AF472AFFDF8B7C45DA8A372A6E8475D9D4C9246EBE3F2CAC4BBFD9111EFC8A767088FCE4F18338462CA753268CCF2C7ABF95402F22112BEBA96051D81E60B64A0685D54897381BB80B0FCAB887623350ED3F8E36D6B7A06387154A9121C219F0642A509946A72111929F2B7897B66B5BB51A5FDA38A668534CAFB6D6046354D2BB8979E5A978EBC600313BD1DDC084BCA2B1F522B83870BCB987E740021374FEFA2ADFC53BB08CA96595B8F19C004898C4AE0170AED4D3</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-02-27T18:24:10</elem>
+<elem key="notAfter">2029-10-06T18:24:10</elem>
+</table>
+<elem key="md5">bd32df3f1d1608b899d2e39b6467297e</elem>
+<elem key="sha1">5c3e5265c5bc68abaaac0d8fab8d90b47895a3d7</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDpzCCAo8CFAOEgqHfMCTRuxKnlGO4GzOrSlUBMA0GCSqGSIb3DQEBCwUAMIGP&#xa;MQswCQYDVQQGEwJFVTERMA8GA1UECAwIRVVcU3BhaW4xDzANBgNVBAcMBk1hZHJp&#xa;ZDEUMBIGA1UECgwLTWFpbGluZyBMdGQxEDAOBgNVBAsMB01BSUxJTkcxFDASBgNV&#xa;BAMMC21haWxpbmcuaHRiMR4wHAYJKoZIhvcNAQkBFg9ydXlAbWFpbGluZy5odGIw&#xa;HhcNMjQwMjI3MTgyNDEwWhcNMjkxMDA2MTgyNDEwWjCBjzELMAkGA1UEBhMCRVUx&#xa;ETAPBgNVBAgMCEVVXFNwYWluMQ8wDQYDVQQHDAZNYWRyaWQxFDASBgNVBAoMC01h&#xa;aWxpbmcgTHRkMRAwDgYDVQQLDAdNQUlMSU5HMRQwEgYDVQQDDAttYWlsaW5nLmh0&#xa;YjEeMBwGCSqGSIb3DQEJARYPcnV5QG1haWxpbmcuaHRiMIIBIjANBgkqhkiG9w0B&#xa;AQEFAAOCAQ8AMIIBCgKCAQEAqp4+GH5rHUD+6aWIgePufgFDz+P7Ph8l8lglXk4E&#xa;wO5lTt/9FkIQykSUwn1zrvIyX2lk6IPN+airnp9irb7Y3mTcGPerX6xm+a9HKv/f&#xa;i3xF2oo3Km6EddnUySRuvj8srEu/2REe/Ip2cIj85PGDOEYsp1MmjM8ser+VQC8i&#xa;ESvrqWBR2B5gtkoGhdVIlzgbuAsPyriHYjNQ7T+ONta3oGOHFUqRIcIZ8GQqUJlG&#xa;pyERkp8reJe2a1u1Gl/aOKZoU0yvttYEY1TSu4l55al468YAMTvR3cCEvKKx9SK4&#xa;OHC8uYfnQAITdP76Kt/FO7CMqWWVuPGcAEiYxK4BcK7U0wIDAQABMA0GCSqGSIb3&#xa;DQEBCwUAA4IBAQCCKIh0MkcgsDtZ1SyFZY02nCtsrcmEIF8++w65WF1fW0H4t9VY&#xa;yJpB1OEiU+ErYQnR2SWlsZSpAqgchJhBVMY6cqGpOC1D4QHPdn0BUOiiD50jkDIx&#xa;Qgsu0BFYnMB/9iA64nsuxdTGpFcDJRfKVHlGgb7p1nn51kdqSlnR+YvHvdjH045g&#xa;ZQ3JHR8iU4thF/t6pYlOcVMs5WCUhKKM4jyucvZ/C9ug9hg3YsEWxlDwyLHmT/4R&#xa;8wvyaiezGnQJ8Mf52qSmSP0tHxj2pdoDaJfkBsaNiT+AKCcY6KVAocmqnZDWQWut&#xa;spvR6dxGnhAPqngRD4sTLBWxyTTR/brJeS/k&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="smtp-commands" output="mailing.htb, SIZE 20480000, AUTH LOGIN PLAIN, HELP&#xa; 211 DATA HELO EHLO MAIL NOOP QUIT RCPT RSET SAML TURN VRFY"/></port>
+<port protocol="tcp" portid="587"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" product="hMailServer smtpd" hostname="mailing.htb" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="ssl-cert" output="Subject: commonName=mailing.htb/organizationName=Mailing Ltd/stateOrProvinceName=EU\Spain/countryName=EU/emailAddress=ruy@mailing.htb/organizationalUnitName=MAILING/localityName=Madrid&#xa;Issuer: commonName=mailing.htb/organizationName=Mailing Ltd/stateOrProvinceName=EU\Spain/countryName=EU/emailAddress=ruy@mailing.htb/organizationalUnitName=MAILING/localityName=Madrid&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-02-27T18:24:10&#xa;Not valid after:  2029-10-06T18:24:10&#xa;MD5:   bd32:df3f:1d16:08b8:99d2:e39b:6467:297e&#xa;SHA-1: 5c3e:5265:c5bc:68ab:aaac:0d8f:ab8d:90b4:7895:a3d7&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDpzCCAo8CFAOEgqHfMCTRuxKnlGO4GzOrSlUBMA0GCSqGSIb3DQEBCwUAMIGP&#xa;MQswCQYDVQQGEwJFVTERMA8GA1UECAwIRVVcU3BhaW4xDzANBgNVBAcMBk1hZHJp&#xa;ZDEUMBIGA1UECgwLTWFpbGluZyBMdGQxEDAOBgNVBAsMB01BSUxJTkcxFDASBgNV&#xa;BAMMC21haWxpbmcuaHRiMR4wHAYJKoZIhvcNAQkBFg9ydXlAbWFpbGluZy5odGIw&#xa;HhcNMjQwMjI3MTgyNDEwWhcNMjkxMDA2MTgyNDEwWjCBjzELMAkGA1UEBhMCRVUx&#xa;ETAPBgNVBAgMCEVVXFNwYWluMQ8wDQYDVQQHDAZNYWRyaWQxFDASBgNVBAoMC01h&#xa;aWxpbmcgTHRkMRAwDgYDVQQLDAdNQUlMSU5HMRQwEgYDVQQDDAttYWlsaW5nLmh0&#xa;YjEeMBwGCSqGSIb3DQEJARYPcnV5QG1haWxpbmcuaHRiMIIBIjANBgkqhkiG9w0B&#xa;AQEFAAOCAQ8AMIIBCgKCAQEAqp4+GH5rHUD+6aWIgePufgFDz+P7Ph8l8lglXk4E&#xa;wO5lTt/9FkIQykSUwn1zrvIyX2lk6IPN+airnp9irb7Y3mTcGPerX6xm+a9HKv/f&#xa;i3xF2oo3Km6EddnUySRuvj8srEu/2REe/Ip2cIj85PGDOEYsp1MmjM8ser+VQC8i&#xa;ESvrqWBR2B5gtkoGhdVIlzgbuAsPyriHYjNQ7T+ONta3oGOHFUqRIcIZ8GQqUJlG&#xa;pyERkp8reJe2a1u1Gl/aOKZoU0yvttYEY1TSu4l55al468YAMTvR3cCEvKKx9SK4&#xa;OHC8uYfnQAITdP76Kt/FO7CMqWWVuPGcAEiYxK4BcK7U0wIDAQABMA0GCSqGSIb3&#xa;DQEBCwUAA4IBAQCCKIh0MkcgsDtZ1SyFZY02nCtsrcmEIF8++w65WF1fW0H4t9VY&#xa;yJpB1OEiU+ErYQnR2SWlsZSpAqgchJhBVMY6cqGpOC1D4QHPdn0BUOiiD50jkDIx&#xa;Qgsu0BFYnMB/9iA64nsuxdTGpFcDJRfKVHlGgb7p1nn51kdqSlnR+YvHvdjH045g&#xa;ZQ3JHR8iU4thF/t6pYlOcVMs5WCUhKKM4jyucvZ/C9ug9hg3YsEWxlDwyLHmT/4R&#xa;8wvyaiezGnQJ8Mf52qSmSP0tHxj2pdoDaJfkBsaNiT+AKCcY6KVAocmqnZDWQWut&#xa;spvR6dxGnhAPqngRD4sTLBWxyTTR/brJeS/k&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">mailing.htb</elem>
+<elem key="countryName">EU</elem>
+<elem key="emailAddress">ruy@mailing.htb</elem>
+<elem key="localityName">Madrid</elem>
+<elem key="organizationName">Mailing Ltd</elem>
+<elem key="organizationalUnitName">MAILING</elem>
+<elem key="stateOrProvinceName">EU\Spain</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">mailing.htb</elem>
+<elem key="countryName">EU</elem>
+<elem key="emailAddress">ruy@mailing.htb</elem>
+<elem key="localityName">Madrid</elem>
+<elem key="organizationName">Mailing Ltd</elem>
+<elem key="organizationalUnitName">MAILING</elem>
+<elem key="stateOrProvinceName">EU\Spain</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">AA9E3E187E6B1D40FEE9A58881E3EE7E0143CFE3FB3E1F25F258255E4E04C0EE654EDFFD164210CA4494C27D73AEF2325F6964E883CDF9A8AB9E9F62ADBED8DE64DC18F7AB5FAC66F9AF472AFFDF8B7C45DA8A372A6E8475D9D4C9246EBE3F2CAC4BBFD9111EFC8A767088FCE4F18338462CA753268CCF2C7ABF95402F22112BEBA96051D81E60B64A0685D54897381BB80B0FCAB887623350ED3F8E36D6B7A06387154A9121C219F0642A509946A72111929F2B7897B66B5BB51A5FDA38A668534CAFB6D6046354D2BB8979E5A978EBC600313BD1DDC084BCA2B1F522B83870BCB987E740021374FEFA2ADFC53BB08CA96595B8F19C004898C4AE0170AED4D3</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-02-27T18:24:10</elem>
+<elem key="notAfter">2029-10-06T18:24:10</elem>
+</table>
+<elem key="md5">bd32df3f1d1608b899d2e39b6467297e</elem>
+<elem key="sha1">5c3e5265c5bc68abaaac0d8fab8d90b47895a3d7</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDpzCCAo8CFAOEgqHfMCTRuxKnlGO4GzOrSlUBMA0GCSqGSIb3DQEBCwUAMIGP&#xa;MQswCQYDVQQGEwJFVTERMA8GA1UECAwIRVVcU3BhaW4xDzANBgNVBAcMBk1hZHJp&#xa;ZDEUMBIGA1UECgwLTWFpbGluZyBMdGQxEDAOBgNVBAsMB01BSUxJTkcxFDASBgNV&#xa;BAMMC21haWxpbmcuaHRiMR4wHAYJKoZIhvcNAQkBFg9ydXlAbWFpbGluZy5odGIw&#xa;HhcNMjQwMjI3MTgyNDEwWhcNMjkxMDA2MTgyNDEwWjCBjzELMAkGA1UEBhMCRVUx&#xa;ETAPBgNVBAgMCEVVXFNwYWluMQ8wDQYDVQQHDAZNYWRyaWQxFDASBgNVBAoMC01h&#xa;aWxpbmcgTHRkMRAwDgYDVQQLDAdNQUlMSU5HMRQwEgYDVQQDDAttYWlsaW5nLmh0&#xa;YjEeMBwGCSqGSIb3DQEJARYPcnV5QG1haWxpbmcuaHRiMIIBIjANBgkqhkiG9w0B&#xa;AQEFAAOCAQ8AMIIBCgKCAQEAqp4+GH5rHUD+6aWIgePufgFDz+P7Ph8l8lglXk4E&#xa;wO5lTt/9FkIQykSUwn1zrvIyX2lk6IPN+airnp9irb7Y3mTcGPerX6xm+a9HKv/f&#xa;i3xF2oo3Km6EddnUySRuvj8srEu/2REe/Ip2cIj85PGDOEYsp1MmjM8ser+VQC8i&#xa;ESvrqWBR2B5gtkoGhdVIlzgbuAsPyriHYjNQ7T+ONta3oGOHFUqRIcIZ8GQqUJlG&#xa;pyERkp8reJe2a1u1Gl/aOKZoU0yvttYEY1TSu4l55al468YAMTvR3cCEvKKx9SK4&#xa;OHC8uYfnQAITdP76Kt/FO7CMqWWVuPGcAEiYxK4BcK7U0wIDAQABMA0GCSqGSIb3&#xa;DQEBCwUAA4IBAQCCKIh0MkcgsDtZ1SyFZY02nCtsrcmEIF8++w65WF1fW0H4t9VY&#xa;yJpB1OEiU+ErYQnR2SWlsZSpAqgchJhBVMY6cqGpOC1D4QHPdn0BUOiiD50jkDIx&#xa;Qgsu0BFYnMB/9iA64nsuxdTGpFcDJRfKVHlGgb7p1nn51kdqSlnR+YvHvdjH045g&#xa;ZQ3JHR8iU4thF/t6pYlOcVMs5WCUhKKM4jyucvZ/C9ug9hg3YsEWxlDwyLHmT/4R&#xa;8wvyaiezGnQJ8Mf52qSmSP0tHxj2pdoDaJfkBsaNiT+AKCcY6KVAocmqnZDWQWut&#xa;spvR6dxGnhAPqngRD4sTLBWxyTTR/brJeS/k&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="smtp-commands" output="mailing.htb, SIZE 20480000, STARTTLS, AUTH LOGIN PLAIN, HELP&#xa; 211 DATA HELO EHLO MAIL NOOP QUIT RCPT RSET SAML TURN VRFY"/></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" product="hMailServer imapd" ostype="Windows" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="imap-capabilities" output="QUOTA completed RIGHTS=texkA0001 CHILDREN OK SORT CAPABILITY IMAP4 IMAP4rev1 ACL IDLE NAMESPACE"/><script id="ssl-cert" output="Subject: commonName=mailing.htb/organizationName=Mailing Ltd/stateOrProvinceName=EU\Spain/countryName=EU/emailAddress=ruy@mailing.htb/organizationalUnitName=MAILING/localityName=Madrid&#xa;Issuer: commonName=mailing.htb/organizationName=Mailing Ltd/stateOrProvinceName=EU\Spain/countryName=EU/emailAddress=ruy@mailing.htb/organizationalUnitName=MAILING/localityName=Madrid&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2024-02-27T18:24:10&#xa;Not valid after:  2029-10-06T18:24:10&#xa;MD5:   bd32:df3f:1d16:08b8:99d2:e39b:6467:297e&#xa;SHA-1: 5c3e:5265:c5bc:68ab:aaac:0d8f:ab8d:90b4:7895:a3d7&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDpzCCAo8CFAOEgqHfMCTRuxKnlGO4GzOrSlUBMA0GCSqGSIb3DQEBCwUAMIGP&#xa;MQswCQYDVQQGEwJFVTERMA8GA1UECAwIRVVcU3BhaW4xDzANBgNVBAcMBk1hZHJp&#xa;ZDEUMBIGA1UECgwLTWFpbGluZyBMdGQxEDAOBgNVBAsMB01BSUxJTkcxFDASBgNV&#xa;BAMMC21haWxpbmcuaHRiMR4wHAYJKoZIhvcNAQkBFg9ydXlAbWFpbGluZy5odGIw&#xa;HhcNMjQwMjI3MTgyNDEwWhcNMjkxMDA2MTgyNDEwWjCBjzELMAkGA1UEBhMCRVUx&#xa;ETAPBgNVBAgMCEVVXFNwYWluMQ8wDQYDVQQHDAZNYWRyaWQxFDASBgNVBAoMC01h&#xa;aWxpbmcgTHRkMRAwDgYDVQQLDAdNQUlMSU5HMRQwEgYDVQQDDAttYWlsaW5nLmh0&#xa;YjEeMBwGCSqGSIb3DQEJARYPcnV5QG1haWxpbmcuaHRiMIIBIjANBgkqhkiG9w0B&#xa;AQEFAAOCAQ8AMIIBCgKCAQEAqp4+GH5rHUD+6aWIgePufgFDz+P7Ph8l8lglXk4E&#xa;wO5lTt/9FkIQykSUwn1zrvIyX2lk6IPN+airnp9irb7Y3mTcGPerX6xm+a9HKv/f&#xa;i3xF2oo3Km6EddnUySRuvj8srEu/2REe/Ip2cIj85PGDOEYsp1MmjM8ser+VQC8i&#xa;ESvrqWBR2B5gtkoGhdVIlzgbuAsPyriHYjNQ7T+ONta3oGOHFUqRIcIZ8GQqUJlG&#xa;pyERkp8reJe2a1u1Gl/aOKZoU0yvttYEY1TSu4l55al468YAMTvR3cCEvKKx9SK4&#xa;OHC8uYfnQAITdP76Kt/FO7CMqWWVuPGcAEiYxK4BcK7U0wIDAQABMA0GCSqGSIb3&#xa;DQEBCwUAA4IBAQCCKIh0MkcgsDtZ1SyFZY02nCtsrcmEIF8++w65WF1fW0H4t9VY&#xa;yJpB1OEiU+ErYQnR2SWlsZSpAqgchJhBVMY6cqGpOC1D4QHPdn0BUOiiD50jkDIx&#xa;Qgsu0BFYnMB/9iA64nsuxdTGpFcDJRfKVHlGgb7p1nn51kdqSlnR+YvHvdjH045g&#xa;ZQ3JHR8iU4thF/t6pYlOcVMs5WCUhKKM4jyucvZ/C9ug9hg3YsEWxlDwyLHmT/4R&#xa;8wvyaiezGnQJ8Mf52qSmSP0tHxj2pdoDaJfkBsaNiT+AKCcY6KVAocmqnZDWQWut&#xa;spvR6dxGnhAPqngRD4sTLBWxyTTR/brJeS/k&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">mailing.htb</elem>
+<elem key="countryName">EU</elem>
+<elem key="emailAddress">ruy@mailing.htb</elem>
+<elem key="localityName">Madrid</elem>
+<elem key="organizationName">Mailing Ltd</elem>
+<elem key="organizationalUnitName">MAILING</elem>
+<elem key="stateOrProvinceName">EU\Spain</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">mailing.htb</elem>
+<elem key="countryName">EU</elem>
+<elem key="emailAddress">ruy@mailing.htb</elem>
+<elem key="localityName">Madrid</elem>
+<elem key="organizationName">Mailing Ltd</elem>
+<elem key="organizationalUnitName">MAILING</elem>
+<elem key="stateOrProvinceName">EU\Spain</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">AA9E3E187E6B1D40FEE9A58881E3EE7E0143CFE3FB3E1F25F258255E4E04C0EE654EDFFD164210CA4494C27D73AEF2325F6964E883CDF9A8AB9E9F62ADBED8DE64DC18F7AB5FAC66F9AF472AFFDF8B7C45DA8A372A6E8475D9D4C9246EBE3F2CAC4BBFD9111EFC8A767088FCE4F18338462CA753268CCF2C7ABF95402F22112BEBA96051D81E60B64A0685D54897381BB80B0FCAB887623350ED3F8E36D6B7A06387154A9121C219F0642A509946A72111929F2B7897B66B5BB51A5FDA38A668534CAFB6D6046354D2BB8979E5A978EBC600313BD1DDC084BCA2B1F522B83870BCB987E740021374FEFA2ADFC53BB08CA96595B8F19C004898C4AE0170AED4D3</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2024-02-27T18:24:10</elem>
+<elem key="notAfter">2029-10-06T18:24:10</elem>
+</table>
+<elem key="md5">bd32df3f1d1608b899d2e39b6467297e</elem>
+<elem key="sha1">5c3e5265c5bc68abaaac0d8fab8d90b47895a3d7</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDpzCCAo8CFAOEgqHfMCTRuxKnlGO4GzOrSlUBMA0GCSqGSIb3DQEBCwUAMIGP&#xa;MQswCQYDVQQGEwJFVTERMA8GA1UECAwIRVVcU3BhaW4xDzANBgNVBAcMBk1hZHJp&#xa;ZDEUMBIGA1UECgwLTWFpbGluZyBMdGQxEDAOBgNVBAsMB01BSUxJTkcxFDASBgNV&#xa;BAMMC21haWxpbmcuaHRiMR4wHAYJKoZIhvcNAQkBFg9ydXlAbWFpbGluZy5odGIw&#xa;HhcNMjQwMjI3MTgyNDEwWhcNMjkxMDA2MTgyNDEwWjCBjzELMAkGA1UEBhMCRVUx&#xa;ETAPBgNVBAgMCEVVXFNwYWluMQ8wDQYDVQQHDAZNYWRyaWQxFDASBgNVBAoMC01h&#xa;aWxpbmcgTHRkMRAwDgYDVQQLDAdNQUlMSU5HMRQwEgYDVQQDDAttYWlsaW5nLmh0&#xa;YjEeMBwGCSqGSIb3DQEJARYPcnV5QG1haWxpbmcuaHRiMIIBIjANBgkqhkiG9w0B&#xa;AQEFAAOCAQ8AMIIBCgKCAQEAqp4+GH5rHUD+6aWIgePufgFDz+P7Ph8l8lglXk4E&#xa;wO5lTt/9FkIQykSUwn1zrvIyX2lk6IPN+airnp9irb7Y3mTcGPerX6xm+a9HKv/f&#xa;i3xF2oo3Km6EddnUySRuvj8srEu/2REe/Ip2cIj85PGDOEYsp1MmjM8ser+VQC8i&#xa;ESvrqWBR2B5gtkoGhdVIlzgbuAsPyriHYjNQ7T+ONta3oGOHFUqRIcIZ8GQqUJlG&#xa;pyERkp8reJe2a1u1Gl/aOKZoU0yvttYEY1TSu4l55al468YAMTvR3cCEvKKx9SK4&#xa;OHC8uYfnQAITdP76Kt/FO7CMqWWVuPGcAEiYxK4BcK7U0wIDAQABMA0GCSqGSIb3&#xa;DQEBCwUAA4IBAQCCKIh0MkcgsDtZ1SyFZY02nCtsrcmEIF8++w65WF1fW0H4t9VY&#xa;yJpB1OEiU+ErYQnR2SWlsZSpAqgchJhBVMY6cqGpOC1D4QHPdn0BUOiiD50jkDIx&#xa;Qgsu0BFYnMB/9iA64nsuxdTGpFcDJRfKVHlGgb7p1nn51kdqSlnR+YvHvdjH045g&#xa;ZQ3JHR8iU4thF/t6pYlOcVMs5WCUhKKM4jyucvZ/C9ug9hg3YsEWxlDwyLHmT/4R&#xa;8wvyaiezGnQJ8Mf52qSmSP0tHxj2pdoDaJfkBsaNiT+AKCcY6KVAocmqnZDWQWut&#xa;spvR6dxGnhAPqngRD4sTLBWxyTTR/brJeS/k&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="5040"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script></port>
+<port protocol="tcp" portid="7680"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pando-pub" method="table" conf="3"/></port>
+<port protocol="tcp" portid="47001"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script></port>
+<port protocol="tcp" portid="49664"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49665"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49666"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49667"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49668"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<hostscript><script id="smb2-time" output="&#xa;  date: 2024-08-01T09:57:49&#xa;  start_date: N/A"><elem key="date">2024-08-01T09:57:49</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="p2p-conficker" output="&#xa;  Checking for Conficker.C or higher...&#xa;  Check 1 (port 29452/tcp): CLEAN (Timeout)&#xa;  Check 2 (port 58328/tcp): CLEAN (Timeout)&#xa;  Check 3 (port 37492/udp): CLEAN (Timeout)&#xa;  Check 4 (port 10619/udp): CLEAN (Timeout)&#xa;  0/4 checks are positive: Host is CLEAN or ports are blocked&#xa;"/><script id="smb2-security-mode" output="&#xa;  3:1:1: &#xa;    Message signing enabled but not required"><table key="3:1:1">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="clock-skew" output="0s"><elem key="count">1</elem>
+<elem key="stddev">0</elem>
+<elem key="median">0</elem>
+<elem key="mean">0</elem>
+</script></hostscript><times srtt="94173" rttvar="21132" to="178701"/>
+</host>
+<taskbegin task="NSE" time="1722506309"/>
+<taskend task="NSE" time="1722506309"/>
+<taskbegin task="NSE" time="1722506309"/>
+<taskend task="NSE" time="1722506309"/>
+<taskbegin task="NSE" time="1722506309"/>
+<taskend task="NSE" time="1722506309"/>
+<runstats><finished time="1722506309" timestr="Thu Aug  1 10:58:29 2024" summary="Nmap done at Thu Aug  1 10:58:29 2024; 1 IP address (1 host up) scanned in 950.18 seconds" elapsed="950.18" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

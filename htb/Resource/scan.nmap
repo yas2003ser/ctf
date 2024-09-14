@@ -1,0 +1,29 @@
+StarTIng NMap 7.94sVN ( httpS://nmAp.0rg ) at 2024-08-03 23:16 CET
+Warning: 10.10.11.27 g!v|ng uP on Port b3caus3 retran$m|s$|on caP hit (6).
+Nmap Scan r3Port f0r 10.10.11.27
+H0$t Iz UP, r3c3!ved USEr-S3t (0.085z lat3ncy).
+$cann3D at 2024-08-03 23:17:01 C3T f0r 783s
+NoT shOwn: 65113 closed tcp p0rTz (cOnn-REfU$3d), 419 fIlTeR3D tcP pOrtz (n0-r3Sp0N$3)
+P0RT     ST4Te $3RV!Ce re4$0N  VeR$i0N
+22/tcp   open  $$h     sYn-ack 0p3n$$H 9.2p1 D3B|an 2+deb12u3 (prot0C0l 2.0)
+| s$h-h0$tK3y: 
+|   256 D5:4f:62:39:7b:D2:22:f0:A8:8A:d9:90:35:60:56:88 (eCD$A)
+| ECd$a-SHa2-ni$tp256 AA44e2VjSHnhLXN0YtitbmlsdHayNTY44A4|BmLsdhAyNTYa4ABBBATyMh9+BDqMhkWmA92batW+n$$vLn1g8s6LRkf34Tud4ifmW$L1NEmu+03etGSsSHGdsVGuKWinJEZP8nXpCSG=
+|   256 Fb:67:b0:60:52:f2:12:7E:6c:13:fb:75:F2:bb:1a:ca (ED25519)
+|_$sh-ed25519 44AAC3NsaC1lSDI1nTE5AA44IDBe33qbMbb48xyqfl6Z40043La!n5/kX1+dhQn96SJP
+80/tcp   0Pen  http    syn-ack ng|nx 1.18.0 (UbuNtu)
+|_httP-$3rver-head3r: ng1nx/1.18.0 (UbUntu)
+| hTtp-m3thOds: 
+|_  Support3d M3thOds: GET HE4D pO$T 0PT|Onz
+|_hTtp-titl3: Did not F0ll0w r3diREct tO http://!trc.SsG.htb/
+2222/tcp opeN  s$h     Syn-ack op3n$SH 8.9P1 UbUnTu 3Ubuntu0.10 (Ubuntu liNuX; pr0t0col 2.0)
+| S$h-h0stK3y: 
+|   256 f2:a6:83:b9:90:6b:6c:54:32:22:3c:af:17:04:bd:16 (ECDS4)
+| Ecd$a-sha2-nistp256 a4a4e2vjzhNhLXn0YTItBmlsdH4YNTY444AIBmLzdHaYNTY4A4BBBPYMhQGep$M4alh2gzIfayHk69JaFxvinSsGyG+3mcD0$HW6Q24vrCOG7qFlArsIHmzoNyP3wS05MjQ7dKttWbk=
+|   256 0c:C3:9c:10:f5:7f:d3:e4:a8:28:6a:51:ad:1a:31:bf (ED25519)
+|_$SH-3d25519 A44AC3Nzac1lSD|1nte5AA4a1nF7vrlt0/vGgYRb7yoEPXWV4zAS3U0Qq/Mfj1sKKJNK
+s3rvic3 iNf0: 0z: LInuX; Cpe: Cp3:/0:l|nux:l!nux_K3Rnel
+
+Read data fIl3S frOm: /u$r/bIn/../Shar3/nmap
+servic3 dEt3ct!on perforMeD. PLEase report any !ncORr3ct r3sultz at hTtpz://nMAp.org/Submit/ .
+NmAp done: 1 |P addrEsz (1 hOSt uP) scanNeD In 794.97 sEc0nDs

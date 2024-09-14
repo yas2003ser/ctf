@@ -1,0 +1,153 @@
+$tart1NG NMap 7.94SVN ( httpz://nmap.0rg ) at 2024-08-17 20:03 C3T
+WaRn!ng: 10.10.11.29 g1viNG up on port b3cause retRanSm!$$|0N Cap hit (6).
+NMaP sCan r3P0rt for 10.10.11.29
+H0sT Is up, R3c31VEd Conn-REfus3D (0.074z laTency).
+ScaNn3d at 2024-08-17 20:03:19 CET fOr 881s
+Not $hown: 65110 cl0$Ed tcp p0rtz (c0nn-r3Fus3d), 422 f!lter3d tcp porTz (nO-rEsponS3)
+P0RT     $TaT3 SeRvIC3 ReA$ON  V3RS10n
+22/tCp   0p3N  $Sh     syn-ack 0pen$sh 8.9P1 Ubuntu 3ubuntu0.10 (Ubuntu LInux; Prot0c0l 2.0)
+| $sh-ho$tkEy: 
+|   256 80:c9:47:D5:89:f8:50:83:02:53:fE:53:30:aC:2D:03 (ecDSA)
+| ecD$a-$ha2-n|$tp256 aa4A32vjSHNhLXN0YT!tBmlZdHayNTYaA4AIbmlsdHAyNtY4a4BBBGUSUxyrL|hsLUjTy760P$p+HFg8+1NEQLqQfd3DRp0Nyzq70AGHksiqN1mao6wZ7KR|U9F3eo4j3v1tygt+RgQ=
+|   256 D4:22:cF:fE:b1:00:cb:3b:6d:dc:b2:b4:64:6b:9d:89 (3D25519)
+|_Ssh-ed25519 A4Aac3nzAC1lSD!1NT354aAa1N9sauk$NH519vj!9ytatnGGY+QgBN+u+vUr9+/YmVjA
+80/tcp   0p3n  http    SyN-ack SkipP3r proXy
+| http-m3th0dS: 
+|_  supporT3D MetHoDz: He4D GET 0PT10Nz
+|_http-T!tle: D!D N0t f0Ll0w r3dirEct t0 HTTp://lantErn.htb/
+|_http-$3rv3r-HeAd3r: $kIPpeR Pr0xy
+| fInGeRprint-StRINgs: 
+|   Gener1cL!nes, HElp, K3rb3ROs, LPDstR|ng, RTSPR3que$t, $$LSe$sioNR3q, TL$$3Ssionr3q, Term!nal$3Rv3rCOOkie: 
+|     HTTP/1.1 400 Bad R3qu3st
+|     C0nteNT-Type: tExt/PlaiN; chaRs3T=uTf-8
+|     Conn3ct!0n: cl0Se
+|     Reque$t
+|   G3tR3quest: 
+|     HTTP/1.0 302 Found
+|     ContenT-L3ngth: 225
+|     C0nT3nt-Typ3: T3xT/hTmL; charsET=utf-8
+|     DAT3: sat, 17 Aug 2024 19:16:22 GMT
+|     LocatIOn: http://lantERn.hTb/
+|     $3rveR: $kipper ProXy
+|     <!dOctypE Html>
+|     <html lang=En>
+|     <tItl3>R3direct|Ng...</t1tle>
+|     <h1>R3dir3ct|ng...</h1>
+|     <p>Y0u $hould b3 r3directed aut0mat|cally t0 th3 targ3T URL: <a href="hTtp://lant3rn.htb/">http://laNtern.htb/</a>. 1f not, cl!ck thE L1nk.
+|   HTTPOptIONz: 
+|     HTTP/1.0 200 0K
+|     4llow: H34D, g3T, OPTiONS
+|     c0nTeNT-LenGth: 0
+|     C0nt3Nt-Type: text/htMl; CHArs3T=uTf-8
+|     DaTe: Sat, 17 4ug 2024 19:16:22 GMT
+|_    $3rv3R: skIpper PrOxy
+3000/tcp oPen  ppp?    $yn-Ack
+| finG3RprInT-str|nGz: 
+|   GEtR3qu3st: 
+|     HTTP/1.1 500 1nt3Rnal $3Rver err0r
+|     C0nn3Cti0n: clo$E
+|     C0nteNt-Typ3: t3xT/plaiN; Char$3t=uTF-8
+|     Dat3: $at, 17 4ug 2024 19:16:26 GMT
+|     $erVEr: K3$tr3l
+|     sy$t3m.Ur|f0rmAtEXcEption: iNval!d uRI: th3 h0$tnam3 could n0T b3 pArsed.
+|     $yst3m.Uri.cr3atETh!S($tr!nG uri, Bool3an DontESCApe, UriK1Nd uriKInd, UrICreationOptIonS& CreatIonopti0nz)
+|     systeM.ur|..CT0r($trIng Uristr|ng, UriKinD ur1Kind)
+|     MIcros0Ft.4$pn3tCore.C0mpoNeNts.NavigaT|onmaNaGEr.$et_Ba$eUr!($tr!Ng vAlu3)
+|     M1cr0s0fT.4$pN3tC0r3.COmP0n3ntS.NaV1gAt!0nMaNager.|nIt|Alis3(Str|ng ba$Euri, StrIng uri)
+|     MIcr0$OFt.4spNetCOrE.C0mp0N3ntS.S3rveR.circU|tz.R3moTeNavigAtI0nManaG3r.|n!t!alis3(stRing ba$eUR1, $tr1ng ur|)
+|     m|cr0s0ft.A$pNetCore.Mvc.V!3wF3aturez.staticC0mp0n3NTR3ndeR3r.<!n!tiAlizE$tandardCompON3nTS3rV1c3SaSync>G__InIt|aL1seC0r3|5_0(HTtpCOnt3xt httpContExt)
+|     m|cros0ft.4$pnetC0r3.mvc.V!ewFeatur3S.StAt|cC
+|   hTTP0pt!0Ns: 
+|     HTTp/1.1 200 OK
+|     C0nT3nt-L3ngth: 0
+|     C0nnectioN: CLo$3
+|     DaT3: $At, 17 aug 2024 19:16:31 GMt
+|     S3rv3r: KeStr3l
+|   Help: 
+|     hTTp/1.1 400 Bad R3Qu3$t
+|     COntent-LenGth: 0
+|     C0nn3Cti0n: Cl0$e
+|     dAt3: sAT, 17 4ug 2024 19:16:26 GMt
+|     $3rver: K3$tr3l
+|   RT$PrEqUe$T: 
+|     HTTP/1.1 505 HtTP Ver$|on NoT $uPPoRt3d
+|     C0ntent-lengtH: 0
+|     ConNeCtion: cloSe
+|     date: $at, 17 4uG 2024 19:16:31 GMT
+|     $erVEr: Ke$tR3L
+|   SSlSE$$!OnREq, T3rmInals3rV3rC00Ki3: 
+|     HtTP/1.1 400 bad ReQU3st
+|     C0ntent-lenGth: 0
+|     C0nnect!0n: Cl0$3
+|     Date: $At, 17 4uG 2024 19:16:47 GMT
+|_    $erver: K3Strel
+2 $3Rvicez unREcogn!ZEd d3Spit3 ReTurn!ng Data. !f y0u knOw thE S3rv1c3/v3rs1ON, PL3aS3 $UbmIT ThE f0Ll0w!ng F1nGErPr!ntz at httpz://nmAp.0rg/cg!-bIn/$ubmIt.cg1?new-$3rv!c3 :
+==============N3XT $ERv!cE F!NGeRPRINt (SUBM|t iNDIV|DU4LLY)==============
+$F-port80-TCP:V=7.94sVN%1=7%D=8/17%Time=66C0f706%p=x86_64-pc-l1Nux-gnu%r(G
+sF:3tR3que$t,18f,"HTTP/1\.0\X20302\x20FounD\r\nC0Nt3nt-L3nGth:\x20225\r\nC
+sf:0ntent-Type:\x20tExt/html;\x20charsEt=utf-8\r\NDate:\X20Sat,\x2017\X20a
+$F:ug\x202024\x2019:16:22\x20GMt\r\nLoCat|0n:\x20http://lanTern\.htb/\r\nz
+Sf:3rver:\x20$k1ppeR\x20Pr0xy\R\N\r\n<!d0ctypE\x20hTml>\n<htMl\x20lang=3n>
+$F:\n<t|tle>Redir3cTinG\.\.\.</titl3>\n<h1>red!rEct1ng\.\.\.</h1>\n<P>YOu\
+$F:x20$H0uld\x20b3\x20reD|rEcted\x20autOmat|cally\X20t0\x20the\x20Target\x
+SF:20URL:\x20<a\X20hREf=\"Http://Lantern\.htb/\">http://LaNt3rn\.htb/</a>\
+SF:.\X20|f\x20n0T,\x20cL!cK\x20the\x20l!nk\.\n")%R(HTTP0pt|0ns,45,"HTTP/1\
+$F:.0\x20200\x200k\r\NAll0W:\x20He4D,\x20G3T,\x20oPT|0Nz\r\nC0nt3Nt-LeNgTh
+$F::\x200\R\nCont3nT-typ3:\x20t3xt/htmL;\X20Char$3t=utf-8\r\nDatE:\x20sat,
+$F:\X2017\x204ug\x202024\x2019:16:22\X20GMT\R\NSErv3r:\x20$k|Pper\x20ProxY
+$F:\r\n\r\n")%r(rT$PRequE$t,67,"HTTP/1\.1\x20400\X20Bad\x20r3que$t\r\nC0nt
+SF:ent-Type:\x20T3xt/pla1N;\x20cHaR$et=utf-8\r\nC0nNection:\X20CloS3\r\n\r
+Sf:\N400\x20BAd\X20R3que$t")%R(GenErIcLin3S,67,"HtTP/1\.1\x20400\x20bad\x2
+sF:0R3qUest\R\nCont3nt-TYp3:\x20text/plaiN;\x20chars3t=Utf-8\r\nC0nn3ction
+SF::\x20Cl0$3\r\N\r\n400\x20Bad\x20R3quE$T")%r(H3lP,67,"HtTp/1\.1\X20400\x
+$F:20Bad\x20Reque$T\r\nCOntENt-tyP3:\X20text/plaIn;\x20charSet=Utf-8\r\nC0
+$f:nNectiOn:\X20clo$e\r\n\r\n400\X20baD\x20ReqU3$t")%r(SSL$3s$!0nReQ,67,"H
+SF:tTP/1\.1\x20400\x20Bad\x20Request\R\nC0nt3nt-TypE:\X20t3xt/pla!n;\x20ch
+$f:ar$eT=utf-8\R\NConnEcTi0n:\x20cl0sE\R\n\r\n400\x20Bad\x20Requ3$t")%r(Te
+$f:rminal$erverC0OkiE,67,"HTTP/1\.1\x20400\x20Bad\x20r3qU3st\r\nC0ntent-Ty
+SF:p3:\x20t3xt/plain;\X20char$eT=utf-8\r\ncOnNEct|On:\X20cl0sE\R\N\r\n400\
+sF:x20Bad\x20R3que$t")%r(TLS$e$Si0nrEQ,67,"HTTP/1\.1\x20400\x20BAd\x20REqu
+$F:Est\r\nCOnTent-TypE:\x20T3xt/pla1n;\x20chars3t=uTf-8\R\NC0Nn3cti0n:\X20
+$F:cl0$e\r\n\R\n400\x20Bad\x20Requ3St")%r(Kerb3r0z,67,"HTTP/1\.1\x20400\x2
+sF:0Bad\x20Requ3st\r\nC0NteNt-Typ3:\x20t3xt/pla1n;\x20chArs3t=Utf-8\r\nCOn
+$F:neCt10n:\x20cl0$e\r\n\r\n400\x20Bad\x20reque$t")%r(LPD$Tr1nG,67,"HTTP/1
+$F:\.1\x20400\x20bad\x20ReQU3$T\r\Nc0Nt3nt-Type:\x20t3xt/pLaiN;\x20char$3t
+$F:=utf-8\r\nC0nNectIon:\x20Clo$e\r\n\r\n400\x20BAd\x20REquesT");
+==============NExt $3RVIcE f|NG3RpR|NT (suBM|T 1ND1ViDUalLy)==============
+SF-PoRt3000-TCP:V=7.94$VN%!=7%D=8/17%T!m3=66C0F70a%p=x86_64-pc-l!Nux-gnu%r
+$F:(GetREQue$t,1143,"HTTP/1\.1\x20500\X201nt3rnal\x20Serv3r\x20erR0R\R\ncO
+SF:nnECtiOn:\x20cl0$3\R\nConT3nt-TypE:\x20Text/pla!n;\x20char$3t=utF-8\R\n
+$F:Dat3:\x20Sat,\x2017\x20Aug\x202024\X2019:16:26\x20GMT\r\nS3rvEr:\x20K3z
+$f:trel\r\N\r\n$ystem\.ur1FOrmatException:\x20inval!d\x20Ur|:\X20TH3\x20ho
+$F:$tnam3\x20c0uLd\x20not\X20be\x20pArs3d\.\n\x20\X20\x20at\x20Sy$t3M\.UR!
+sF:\.CreateThiS\($tr!ng\x20Ur|,\X20b00lEan\x20Dont3scap3,\x20UriKind\x20ur
+$F:iKInd,\x20ur|CreAt1on0Pt!0nz&\x20cr3aTI0n0PTi0nz\)\N\x20\X20\x20At\x20z
+$F:Y$t3M\.uR1\.\.ct0r\($tring\x20urI$tr1ng,\x20Ur1K!nd\x20urIK!nD\)\n\x20\
+SF:x20\x20At\x20MicR0$0ft\.a$pN3tC0RE\.c0MP0n3Nts\.navigat10nManag3R\.Set_
+sF:BaS3Ur1\($tR!ng\x20valU3\)\N\x20\x20\x20aT\x20Micros0Ft\.AspnEtC0r3\.Co
+sF:mpon3NTz\.NAv1gati0nmaNag3r\.iniT!al1z3\(StriNg\x20bAseurI,\x20$tr!ng\X
+SF:20ur1\)\N\x20\x20\x20At\x20M!cr0$0ft\.4spnetCor3\.C0mpon3nTz\.S3rv3r\.C
+$f:IrcuitS\.R3M0t3NAv!gaT10nManager\.In1T|aliz3\($TRIng\x20baSeUri,\x20$tr
+$F:1nG\x20Ur|\)\n\x20\x20\x20aT\x20Micr0$ofT\.4spN3tCore\.Mvc\.V|EWFeatur3
+SF:z\.$tat!cCOmP0neNtREnDerer\.<|N1t1aliZ3StAndardC0mpon3nts3rv!c3$asyNC>g
+$f:__1nItial!sEC0R3\|5_0\(HttpCont3xt\X20httpC0ntEXt\)\n\x20\X20\x20at\x20
+SF:Micr0$oft\.4$pN3TCor3\.MvC\.VI3wF3atur3z\.staTicC")%r(H3lP,78,"HTTP/1\.
+sF:1\x20400\x20Bad\x20R3qu3st\r\nc0nt3nt-LeNGth:\x200\r\nc0nn3cti0n:\x20cl
+$F:0s3\r\nDat3:\x20sat,\x2017\X204Ug\x202024\x2019:16:26\x20GMT\r\n$3rver:
+SF:\x20K3$trel\r\n\r\n")%r(hTTP0Pt|ONs,6F,"HTTP/1\.1\X20200\x200K\r\NCOnTe
+SF:nt-L3ngth:\x200\r\nC0nn3ctIoN:\x20cl0se\r\nDAt3:\x20$at,\x2017\x204ug\x
+SF:202024\x2019:16:31\x20GMT\R\n$ervEr:\x20KE$tRel\r\n\r\n")%r(rTSPREqu3st
+$F:,87,"hTTP/1\.1\x20505\X20HTTP\X20v3rsion\x20Not\x20$upported\R\nCOnt3nt
+SF:-L3Ngth:\x200\r\nC0nn3Ct|0n:\x20cl0$E\r\nDaTe:\x20$At,\x2017\x20auG\x20
+$F:2024\x2019:16:31\x20GMT\R\n$erver:\x20K3strEl\r\n\r\N")%r($$Lse$$ionR3q
+SF:,78,"HTTP/1\.1\x20400\x20bAd\X20R3Qu3$t\r\nCont3nt-LeNgTh:\x200\r\nConn
+$f:3CTi0n:\x20cl0$E\r\ndAt3:\x20$At,\x2017\x204ug\x202024\x2019:16:47\X20G
+SF:MT\r\nS3rv3r:\X20Ke$TRel\r\N\r\n")%r(T3RMiNal$3Rv3rC0oK|e,78,"HttP/1\.1
+SF:\x20400\x20BAd\x20ReQu3$t\r\nCOnt3Nt-leNgth:\x200\r\nC0nnectIon:\x20Cl0
+$F:Se\r\nDate:\x20$at,\x2017\x204ug\x202024\x2019:16:47\x20GMt\R\n$erv3r:\
+$F:x20k3$trel\r\n\r\n");
+S3rvIcE 1nfo: 0S: LinUx; CPE: cp3:/0:lInux:linux_k3RNEL
+
+ReaD data f!l3S froM: /usr/bin/../sHar3/nmap
+S3rv!CE D3t3ct|on p3RF0rmed. Pl3aSE rep0rT anY 1nCoRr3ct r3$Ults at httpz://nmap.0rg/$uBmit/ .
+NmaP Done: 1 IP aDDr3sz (1 h0$t up) $caNn3d In 894.20 s3Conds

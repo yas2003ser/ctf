@@ -1,0 +1,13 @@
+# For commercial use, please contact the author for authorization. For non-commercial use, please indicate the source.
+# License: CC BY-NC-SA 4.0
+# Author: Axura
+# URL: https://4xura.com/ctf/htb/htb-writeup-infiltrator/
+# Source: Axura's Blog
+
+d.anderson@infiltrator.htb
+a.walker@infiltrator.htb
+e.rodriguez@infiltrator.htb
+k.turner@infiltrator.htb
+m.harris@infiltrator.htb
+o.martinez@infiltrator.htb
+l.clark@infiltrator.htb

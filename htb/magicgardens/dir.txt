@@ -1,0 +1,28 @@
+gobuster dir --url http://magicgardens.htb/   --wordlist Discovery/Web-Content/directory-list-2.3-big.txt
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://magicgardens.htb/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                Discovery/Web-Content/directory-list-2.3-big.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+/search               (Status: 301) [Size: 0] [--> /search/]
+/login                (Status: 301) [Size: 0] [--> /login/]
+/register             (Status: 301) [Size: 0] [--> /register/]
+/profile              (Status: 301) [Size: 0] [--> /profile/]
+/subscribe            (Status: 301) [Size: 0] [--> /subscribe/]
+/catalog              (Status: 301) [Size: 0] [--> /catalog/]
+/admin                (Status: 301) [Size: 0] [--> /admin/]
+/cart                 (Status: 301) [Size: 0] [--> /cart/]
+/logout               (Status: 301) [Size: 0] [--> /logout/]
+/check                (Status: 301) [Size: 0] [--> /check/]
+/restore              (Status: 301) [Size: 0] [--> /restore/]
+/wish_list            (Status: 301) [Size: 0] [--> /wish_list/]
+
